@@ -36,7 +36,8 @@
             background-repeat: no-repeat;
             background-size: 300% 300%;
         }
-          /* Neon Button (USED THIS FROM UIVERSE.IO)*/
+
+        /* Neon Button (USED THIS FROM UIVERSE.IO)*/
         .neon-btn {
             --green: #ff2e88;
             font-size: 14px;
@@ -57,7 +58,7 @@
                 inset 0 0 10px rgba(255, 46, 136, 0.4),
                 0 0 9px 3px rgba(255, 46, 136, 0.1);
         }
-        
+
         .neon-btn:hover {
             color: #ff8ec5;
             box-shadow:
@@ -83,43 +84,43 @@
         .neon-btn:hover:before {
             transform: translateX(15em);
         }
+
         /*TrueBond 3D Logo Button(USED THIS FROM UIVERSE.IO) */
 
-.logo-btn {
-  padding: 0.1em 0.25em;
-  width: 13em;
-  height: 4em;
-  background: linear-gradient(135deg, #f43f5e, #ec4899);
-  border: none;
-  border-radius: 0.5em;
-  font-size: 12px;
-  cursor: pointer;
-}
+        .logo-btn {
+            padding: 0.1em 0.25em;
+            width: 13em;
+            height: 4em;
+            background: linear-gradient(135deg, #f43f5e, #ec4899);
+            border: none;
+            border-radius: 0.5em;
+            font-size: 12px;
+            cursor: pointer;
+        }
 
-.logo-btn span {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  bottom: 0.4em;
-  width: 100%;
-  height: 2.5em;
-  background: white;
-  border-radius: 0.4em;
-  font-size: 1.4em;
-  font-weight: 700;
-  color: #e11d48;
-  box-shadow: 0 0.4em 0.1em 0.02em rgba(244, 63, 94, 0.6);
-  transition: all 0.4s ease;
-}
+        .logo-btn span {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            bottom: 0.4em;
+            width: 100%;
+            height: 2.5em;
+            background: white;
+            border-radius: 0.4em;
+            font-size: 1.4em;
+            font-weight: 700;
+            color: #e11d48;
+            box-shadow: 0 0.4em 0.1em 0.02em rgba(244, 63, 94, 0.6);
+            transition: all 0.4s ease;
+        }
 
-.logo-btn span:hover {
-  transform: translateY(0.4em);
-  box-shadow: 0 0 0 0 rgba(244, 63, 94, 0.6);
-}
-
+        .logo-btn span:hover {
+            transform: translateY(0.4em);
+            box-shadow: 0 0 0 0 rgba(244, 63, 94, 0.6);
+        }
     </style>
-   
+
 
 </head>
 
@@ -130,8 +131,8 @@
         >
         <div class="max-w-7xl mx-auto flex justify-between items-center px-6 py-4">
             <button class="logo-btn">
-    <span>TrueBond ❤️</span>
-</button>
+                <span>TrueBond ❤️</span>
+            </button>
 
             <nav class="hidden md:flex space-x-8 font-medium">
                 <a href="#" class="hover:text-rose-500 transition">Home</a>
@@ -143,13 +144,13 @@
                 class="bg-gradient-to-r from-rose-500 to-pink-500 text-white px-5 py-2 rounded-full shadow-lg hover:scale-105 transition">Sign
                 Up</a>
 
-          <!--Neon Music Button(USED IT FROM UIVERSE.IO) -->
+            <!--Neon Music Button(USED IT FROM UIVERSE.IO) -->
             <button id="musicBtn" class="neon-btn">
                 🎵 Play Music
             </button>
         </div>
     </header>
-        </div>
+    </div>
     </header>
 
 
@@ -171,11 +172,11 @@
             </div>
         </div>
     </section>
-     <!-- 🎵 Audio -->
+    <!-- 🎵 Audio -->
     <audio id="bg-music" loop>
         <source src="careless-whisper.mp3" type="audio/mpeg">
     </audio>
-     <!-- 🎵 Script -->
+    <!-- 🎵 Script -->
     <script>
         const audio = document.getElementById("bg-music");
         const musicBtn = document.getElementById("musicBtn");
@@ -195,109 +196,116 @@
     </script>
     <!--addition starts>
 <!-- Profile Preview Section -->
-<section class="py-20 bg-rose-50">
-  <div class="max-w-6xl mx-auto px-6">
+    <section class="py-20 bg-rose-50">
+        <div class="max-w-6xl mx-auto px-6">
 
-    <div class="text-center mb-12">
-      <h3 class="text-4xl font-bold mb-3">Your Profile Preview 👀</h3>
-      <p class="text-gray-600">This is how others will see you.</p>
-    </div>
+            <div class="text-center mb-12">
+                <h3 class="text-4xl font-bold mb-3">Your Profile Preview 👀</h3>
+                <p class="text-gray-600">This is how others will see you.</p>
+            </div>
 
-    <div class="flex flex-col md:flex-row items-center justify-center gap-12">
+            <div class="flex flex-col md:flex-row items-center justify-center gap-12">
 
-      <!-- Profile Card (UNCHANGED STYLE) -->
-      <div class="w-80 bg-white rounded-2xl shadow-2xl overflow-hidden hover:scale-105 transition duration-300">
+                <!-- Profile Card (UNCHANGED STYLE) -->
+                <div
+                    class="w-80 bg-white rounded-2xl shadow-2xl overflow-hidden hover:scale-105 transition duration-300">
 
-        <!-- Profile Image -->
-        <img src="https://goldenglobes.com/wp-content/uploads/2024/12/Gyllenhaal_Jake_Nov24.jpg?w=600?w=600"
-             class="w-full h-80 object-cover">
+                    <!-- Profile Image -->
+                    <img src="https://goldenglobes.com/wp-content/uploads/2024/12/Gyllenhaal_Jake_Nov24.jpg?w=600?w=600"
+                        class="w-full h-80 object-cover">
 
-        <!-- Info Section -->
-        <div class="p-6">
+                    <!-- Info Section -->
+                    <div class="p-6">
 
-          <div class="flex justify-between items-center mb-2">
-            <h4 class="text-2xl font-bold">Jake, 28</h4>
-            <span class="text-sm text-gray-500">📍 Las Vegas , USA</span>
-          </div>
+                        <div class="flex justify-between items-center mb-2">
+                            <h4 class="text-2xl font-bold">Jake, 28</h4>
+                            <span class="text-sm text-gray-500">📍 Las Vegas , USA</span>
+                        </div>
 
-          <p class="text-sm text-gray-500 mb-3">Two truths & a lie...</p>
+                        <p class="text-sm text-gray-500 mb-3">Two truths & a lie...</p>
 
-          <p class="text-gray-700 text-sm leading-relaxed">
-            I can code for 8 hours straight.  
-            I love to binge watch movies late night.  
-            Looking for something meaningful 💕
-          </p>
+                        <p class="text-gray-700 text-sm leading-relaxed">
+                            I can code for 8 hours straight.
+                            I love to binge watch movies late night.
+                            Looking for something meaningful 💕
+                        </p>
 
-          <!-- Action Buttons -->
-          <div class="flex justify-between mt-6">
-            <button class="w-12 h-12 bg-gray-200 rounded-full flex items-center justify-center hover:bg-gray-300 transition">
-              ✖
-            </button>
+                        <!-- Action Buttons -->
+                        <div class="flex justify-between mt-6">
+                            <button
+                                class="w-12 h-12 bg-gray-200 rounded-full flex items-center justify-center hover:bg-gray-300 transition">
+                                ✖
+                            </button>
 
-            <button class="w-14 h-14 bg-gradient-to-r from-rose-500 to-pink-500 text-white rounded-full flex items-center justify-center shadow-lg hover:scale-110 transition">
-              ❤️
-            </button>
+                            <button
+                                class="w-14 h-14 bg-gradient-to-r from-rose-500 to-pink-500 text-white rounded-full flex items-center justify-center shadow-lg hover:scale-110 transition">
+                                ❤️
+                            </button>
 
-            <button class="w-12 h-12 bg-gray-200 rounded-full flex items-center justify-center hover:bg-gray-300 transition">
-              ⭐
-            </button>
-          </div>
+                            <button
+                                class="w-12 h-12 bg-gray-200 rounded-full flex items-center justify-center hover:bg-gray-300 transition">
+                                ⭐
+                            </button>
+                        </div>
 
+                    </div>
+                </div>
+
+                <!-- Interests Section -->
+                <div class="bg-white p-8 rounded-2xl shadow-xl w-full md:w-96">
+
+                    <h4 class="text-2xl font-bold mb-6 text-gray-800">
+                        My Interests 💫
+                    </h4>
+
+                    <!-- Music -->
+                    <div class="mb-6">
+                        <p class="text-sm font-semibold text-gray-500 mb-2">🎵 Music</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-pink-100 text-pink-600 px-4 py-1 text-sm rounded-full">Joji</span>
+                            <span class="bg-pink-100 text-pink-600 px-4 py-1 text-sm rounded-full">The Weeknd</span>
+                            <span class="bg-pink-100 text-pink-600 px-4 py-1 text-sm rounded-full">Post Malone</span>
+                        </div>
+                    </div>
+
+                    <!-- Movies -->
+                    <div class="mb-6">
+                        <p class="text-sm font-semibold text-gray-500 mb-2">🎬 Movies</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span
+                                class="bg-purple-100 text-purple-600 px-4 py-1 text-sm rounded-full">Nightcrawler</span>
+                            <span class="bg-purple-100 text-purple-600 px-4 py-1 text-sm rounded-full">The Grand
+                                Budapest Hotels</span>
+                        </div>
+                    </div>
+
+                    <!-- Food -->
+                    <div class="mb-6">
+                        <p class="text-sm font-semibold text-gray-500 mb-2">🍕 Food</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-rose-100 text-rose-600 px-4 py-1 text-sm rounded-full">Lasagna</span>
+                            <span class="bg-rose-100 text-rose-600 px-4 py-1 text-sm rounded-full">Apple Pie</span>
+                        </div>
+                    </div>
+
+                    <!-- Destination -->
+                    <div>
+                        <p class="text-sm font-semibold text-gray-500 mb-2">✈️ Fav Destination</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span
+                                class="bg-indigo-100 text-indigo-600 px-4 py-1 text-sm rounded-full">Switzerland</span>
+                            <span class="bg-indigo-100 text-indigo-600 px-4 py-1 text-sm rounded-full">Vietnam</span>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
         </div>
-      </div>
+    </section>
 
-      <!-- Interests Section -->
-      <div class="bg-white p-8 rounded-2xl shadow-xl w-full md:w-96">
+    <!-- addition ends-->
 
-        <h4 class="text-2xl font-bold mb-6 text-gray-800">
-          My Interests 💫
-        </h4>
-
-        <!-- Music -->
-        <div class="mb-6">
-          <p class="text-sm font-semibold text-gray-500 mb-2">🎵 Music</p>
-          <div class="flex flex-wrap gap-2">
-            <span class="bg-pink-100 text-pink-600 px-4 py-1 text-sm rounded-full">Joji</span>
-            <span class="bg-pink-100 text-pink-600 px-4 py-1 text-sm rounded-full">The Weeknd</span>
-            <span class="bg-pink-100 text-pink-600 px-4 py-1 text-sm rounded-full">Post Malone</span>
-          </div>
-        </div>
-
-        <!-- Movies -->
-        <div class="mb-6">
-          <p class="text-sm font-semibold text-gray-500 mb-2">🎬 Movies</p>
-          <div class="flex flex-wrap gap-2">
-            <span class="bg-purple-100 text-purple-600 px-4 py-1 text-sm rounded-full">Nightcrawler</span>
-            <span class="bg-purple-100 text-purple-600 px-4 py-1 text-sm rounded-full">The Grand Budapest Hotels</span>
-          </div>
-        </div>
-
-        <!-- Food -->
-        <div class="mb-6">
-          <p class="text-sm font-semibold text-gray-500 mb-2">🍕 Food</p>
-          <div class="flex flex-wrap gap-2">
-            <span class="bg-rose-100 text-rose-600 px-4 py-1 text-sm rounded-full">Lasagna</span>
-            <span class="bg-rose-100 text-rose-600 px-4 py-1 text-sm rounded-full">Apple Pie</span>
-          </div>
-        </div>
-
-        <!-- Destination -->
-        <div>
-          <p class="text-sm font-semibold text-gray-500 mb-2">✈️ Fav Destination</p>
-          <div class="flex flex-wrap gap-2">
-            <span class="bg-indigo-100 text-indigo-600 px-4 py-1 text-sm rounded-full">Switzerland</span>
-            <span class="bg-indigo-100 text-indigo-600 px-4 py-1 text-sm rounded-full">Vietnam</span>
-          </div>
-        </div>
-
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<!-- addition ends-->
-    
 
     <!-- Featured Profiles -->
     <section class="py-20 bg-rose-50">
@@ -439,43 +447,99 @@
         </div>
     </section>
 
-   
-    <section class="py-20 bg-gradient-to-r from-rose-500 to-pink-500 text-white text-center">
-        <h3 class="text-4xl font-bold mb-6">Start Your Love Story Today</h3>
-        <a href="#"
-            class="bg-white text-rose-600 px-10 py-4 rounded-full font-semibold shadow-lg hover:scale-105 transition">Join
-            TrueBond</a>
-    </section>
 
 
-    <!-- Footer -->
-    <footer class="bg-gray-900 text-gray-300 py-10">
-        <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-3 gap-8">
-            <div>
-                <h4 class="font-bold text-white mb-4">TrueBond ❤️</h4>
-                <p>Connecting hearts worldwide.</p>
-            </div>
-            <div>
-                <h4 class="font-bold text-white mb-4">Quick Links</h4>
-                <ul class="space-y-2">
-                    <li><a href="#" class="hover:text-white">Home</a></li>
-                    <li><a href="#" class="hover:text-white">Matches</a></li>
-                    <li><a href="#" class="hover:text-white">Stories</a></li>
-                </ul>
-            </div>
-            <div>
-                <h4 class="font-bold text-white mb-4">Follow Us</h4>
-                <div class="flex space-x-4">
-                    <span>🌐</span>
-                    <span>📷</span>
-                    <span>🐦</span>
-                </div>
-            </div>
-        </div>
-        <div class="text-center mt-8 text-sm text-gray-500">
-            © 2026 TrueBond. All rights reserved.
-        </div>
-    </footer>
+    <!-- Valentine Proposal Section -->
+
+<section id="valentineSection" class="py-24 bg-gradient-to-r from-rose-500 to-pink-500 text-white text-center">
+
+    <h2 class="text-5xl font-extrabold mb-10">
+        Will You Be My Valentine? 💕
+    </h2>
+
+    <div class="flex justify-center items-center gap-10">
+
+        <button id="yesBtn"
+            class="bg-white text-rose-600 px-12 py-5 rounded-full text-2xl font-bold shadow-xl transition duration-300">
+            YES ❤️
+        </button>
+
+        <button id="noBtn"
+            class="bg-gray-200 text-gray-800 px-12 py-5 rounded-full text-2xl font-bold shadow-xl transition duration-300">
+            No 😢
+        </button>
+
+    </div>
+
+</section>
+
+<!-- Hidden Yay Screen -->
+<div id="yayScreen"
+     class="hidden fixed inset-0 h-screen w-screen flex items-center justify-center bg-gradient-to-r from-rose-500 to-pink-500 text-white text-center fixed inset-0 w-screen z-50">
+    <h1 class="text-6xl font-extrabold animate-bounce">
+        Yayyyy 💍💕
+    </h1>
+</div>
+
+
+<!-- Sad Song -->
+<audio id="sadSong">
+    <source src="sad_song.mp3" type="audio/mpeg">
+</audio>
+
+<!-- Celebration Song -->
+<audio id="celebrationSound">
+    <source src="happy-song.mp3" type="audio/mpeg">
+</audio>
+
+
+
+
+   <script>
+    const yesBtn = document.getElementById("yesBtn");
+    const noBtn = document.getElementById("noBtn");
+    const sadSong = document.getElementById("sadSong");
+    const celebrationSound = document.getElementById("celebrationSound");
+
+    let yesScale = 1;
+    let noScale = 1;
+
+    // NO button behavior
+    noBtn.addEventListener("click", function () {
+
+        sadSong.currentTime = 25; // start sad song at 25 sec
+        sadSong.play();
+
+        yesScale += 0.2;
+        yesBtn.style.transform = `scale(${yesScale})`;
+
+        noScale -= 0.15;
+        noBtn.style.transform = `scale(${noScale})`;
+
+        if (noScale <= 0.3) {
+            noBtn.style.display = "none";
+        }
+    });
+
+    // YES button behavior
+    yesBtn.addEventListener("click", function () {
+
+        // Stop sad song if playing
+        sadSong.pause();
+        sadSong.currentTime = 25;
+
+        // Hide Valentine section
+        document.getElementById("valentineSection").classList.add("hidden");
+
+        // Show Yay screen
+        document.getElementById("yayScreen").classList.remove("hidden");
+
+        // Play celebration sound
+        celebrationSound.currentTime = 6;
+        celebrationSound.play();
+    });
+</script>
+
 
 </body>
 
