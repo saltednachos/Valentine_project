@@ -6,7 +6,566 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TrueBond ❤️</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TrueBond ❤️</title>
+    <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Poppins', 'sans-serif'],
+                    },
+                    animation: {
+                        gradient: "gradient 10s ease infinite",
+                    },
+                    keyframes: {
+                        gradient: {
+                            "0%, 100%": { backgroundPosition: "0% 50%" },
+                            "50%": { backgroundPosition: "100% 50%" },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .bg-animated {
+
+            background-image: url('https://img.freepik.com/free-vector/beautiful-cute-love-heart-pattern-valentines-card-design_1017-49295.jpg?semt=ais_hybrid&w=740&q=80');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 300% 300%;
+        }
+
+        /* Neon Button (USED THIS FROM UIVERSE.IO)*/
+        .neon-btn {
+            --green: #ff2e88;
+            font-size: 14px;
+            padding: 0.6em 2em;
+            letter-spacing: 0.06em;
+            position: relative;
+            border-radius: 0.6em;
+            overflow: hidden;
+            transition: all 0.3s;
+            border: 2px solid var(--green);
+            background: linear-gradient(to right,
+                    rgba(255, 46, 136, 0.1) 1%,
+                    transparent 40%,
+                    transparent 60%,
+                    rgba(255, 46, 136, 0.1) 100%);
+            color: var(--green);
+            box-shadow:
+                inset 0 0 10px rgba(255, 46, 136, 0.4),
+                0 0 9px 3px rgba(255, 46, 136, 0.1);
+        }
+
+        .neon-btn:hover {
+            color: #ff8ec5;
+            box-shadow:
+                inset 0 0 10px rgba(255, 46, 136, 0.6),
+                0 0 9px 3px rgba(255, 46, 136, 0.2);
+        }
+
+        .neon-btn:before {
+            content: "";
+            position: absolute;
+            left: -4em;
+            width: 4em;
+            height: 100%;
+            top: 0;
+            transition: transform .4s ease-in-out;
+            background: linear-gradient(to right,
+                    transparent 1%,
+                    rgba(255, 46, 136, 0.1) 40%,
+                    rgba(255, 46, 136, 0.1) 60%,
+                    transparent 100%);
+        }
+
+        .neon-btn:hover:before {
+            transform: translateX(15em);
+        }
+
+        /*TrueBond 3D Logo Button(USED THIS FROM UIVERSE.IO) */
+
+        .logo-btn {
+            padding: 0.1em 0.25em;
+            width: 13em;
+            height: 4em;
+            background: linear-gradient(135deg, #f43f5e, #ec4899);
+            border: none;
+            border-radius: 0.5em;
+            font-size: 12px;
+            cursor: pointer;
+        }
+
+        .logo-btn span {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            bottom: 0.4em;
+            width: 100%;
+            height: 2.5em;
+            background: white;
+            border-radius: 0.4em;
+            font-size: 1.4em;
+            font-weight: 700;
+            color: #e11d48;
+            box-shadow: 0 0.4em 0.1em 0.02em rgba(244, 63, 94, 0.6);
+            transition: all 0.4s ease;
+        }
+
+        .logo-btn span:hover {
+            transform: translateY(0.4em);
+            box-shadow: 0 0 0 0 rgba(244, 63, 94, 0.6);
+        }
+    </style>
+
+
+</head>
+
+<body class="font-sans text-gray-800 bg-white scroll-smooth">
+
+    <!-- Navbar -->
+    <header id="navbar" class="fixed w-full z-50 bg-white shadow-md transition duration-300">
+        >
+        <div class="max-w-7xl mx-auto flex justify-between items-center px-6 py-4">
+            <button class="logo-btn">
+                <span>TrueBond ❤️</span>
+            </button>
+
+            <nav class="hidden md:flex space-x-8 font-medium">
+                <a href="#" class="hover:text-rose-500 transition">Home</a>
+                <a href="#" class="hover:text-rose-500 transition">Matches</a>
+                <a href="#" class="hover:text-rose-500 transition">Stories</a>
+                <a href="#" class="hover:text-rose-500 transition">Contact</a>
+            </nav>
+            <a href="#"
+                class="bg-gradient-to-r from-rose-500 to-pink-500 text-white px-5 py-2 rounded-full shadow-lg hover:scale-105 transition">Sign
+                Up</a>
+
+            <!--Neon Music Button(USED IT FROM UIVERSE.IO) -->
+            <button id="musicBtn" class="neon-btn">
+                🎵 Play Music
+            </button>
+        </div>
+    </header>
+    </div>
+    </header>
+
+
+
+
+
+    <!-- Hero Section -->
+    <section class="bg-animated animate-gradient min-h-screen flex items-center justify-center text-center text-white">
+        <div class="px-6 max-w-3xl">
+            <h2 class="text-5xl md:text-6xl font-extrabold mb-6 drop-shadow-lg">Where Love Finds You 💕</h2>
+            <p class="text-lg md:text-xl mb-8 opacity-90">A modern way to connect hearts this Valentine’s.</p>
+            <div class="flex justify-center gap-4">
+                <a href="#"
+                    class="bg-white text-rose-600 px-8 py-3 rounded-full font-semibold shadow-lg hover:scale-105 transition">Find
+                    Matches</a>
+                <a href="#"
+                    class="border border-white px-8 py-3 rounded-full font-semibold hover:bg-white hover:text-rose-600 transition">Learn
+                    More</a>
+            </div>
+        </div>
+    </section>
+    <!-- 🎵 Audio -->
+    <audio id="bg-music" loop>
+        <source src="careless-whisper.mp3" type="audio/mpeg">
+    </audio>
+    <!-- 🎵 Script -->
+    <script>
+        const audio = document.getElementById("bg-music");
+        const musicBtn = document.getElementById("musicBtn");
+        let isPlaying = false;
+
+        musicBtn.addEventListener("click", function () {
+            if (!isPlaying) {
+                audio.play();
+                musicBtn.innerHTML = "⏸ Pause Music";
+                isPlaying = true;
+            } else {
+                audio.pause();
+                musicBtn.innerHTML = "🎵 Play Music";
+                isPlaying = false;
+            }
+        });
+    </script>
+    <!--addition starts>
+<!-- Profile Preview Section -->
+    <section class="py-20 bg-rose-50">
+        <div class="max-w-6xl mx-auto px-6">
+
+            <div class="text-center mb-12">
+                <h3 class="text-4xl font-bold mb-3">Your Profile Preview 👀</h3>
+                <p class="text-gray-600">This is how others will see you.</p>
+            </div>
+
+            <div class="flex flex-col md:flex-row items-center justify-center gap-12">
+
+                <!-- Profile Card (UNCHANGED STYLE) -->
+                <div
+                    class="w-80 bg-white rounded-2xl shadow-2xl overflow-hidden hover:scale-105 transition duration-300">
+
+                    <!-- Profile Image -->
+                    <img src="https://goldenglobes.com/wp-content/uploads/2024/12/Gyllenhaal_Jake_Nov24.jpg?w=600?w=600"
+                        class="w-full h-80 object-cover">
+
+                    <!-- Info Section -->
+                    <div class="p-6">
+
+                        <div class="flex justify-between items-center mb-2">
+                            <h4 class="text-2xl font-bold">Jake, 28</h4>
+                            <span class="text-sm text-gray-500">📍 Las Vegas , USA</span>
+                        </div>
+
+                        <p class="text-sm text-gray-500 mb-3">Two truths & a lie...</p>
+
+                        <p class="text-gray-700 text-sm leading-relaxed">
+                            I can code for 8 hours straight.
+                            I love to binge watch movies late night.
+                            Looking for something meaningful 💕
+                        </p>
+
+                        <!-- Action Buttons -->
+                        <div class="flex justify-between mt-6">
+                            <button
+                                class="w-12 h-12 bg-gray-200 rounded-full flex items-center justify-center hover:bg-gray-300 transition">
+                                ✖
+                            </button>
+
+                            <button
+                                class="w-14 h-14 bg-gradient-to-r from-rose-500 to-pink-500 text-white rounded-full flex items-center justify-center shadow-lg hover:scale-110 transition">
+                                ❤️
+                            </button>
+
+                            <button
+                                class="w-12 h-12 bg-gray-200 rounded-full flex items-center justify-center hover:bg-gray-300 transition">
+                                ⭐
+                            </button>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Interests Section -->
+                <div class="bg-white p-8 rounded-2xl shadow-xl w-full md:w-96">
+
+                    <h4 class="text-2xl font-bold mb-6 text-gray-800">
+                        My Interests 💫
+                    </h4>
+
+                    <!-- Music -->
+                    <div class="mb-6">
+                        <p class="text-sm font-semibold text-gray-500 mb-2">🎵 Music</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-pink-100 text-pink-600 px-4 py-1 text-sm rounded-full">Joji</span>
+                            <span class="bg-pink-100 text-pink-600 px-4 py-1 text-sm rounded-full">The Weeknd</span>
+                            <span class="bg-pink-100 text-pink-600 px-4 py-1 text-sm rounded-full">Post Malone</span>
+                        </div>
+                    </div>
+
+                    <!-- Movies -->
+                    <div class="mb-6">
+                        <p class="text-sm font-semibold text-gray-500 mb-2">🎬 Movies</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span
+                                class="bg-purple-100 text-purple-600 px-4 py-1 text-sm rounded-full">Nightcrawler</span>
+                            <span class="bg-purple-100 text-purple-600 px-4 py-1 text-sm rounded-full">The Grand
+                                Budapest Hotels</span>
+                        </div>
+                    </div>
+
+                    <!-- Food -->
+                    <div class="mb-6">
+                        <p class="text-sm font-semibold text-gray-500 mb-2">🍕 Food</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-rose-100 text-rose-600 px-4 py-1 text-sm rounded-full">Lasagna</span>
+                            <span class="bg-rose-100 text-rose-600 px-4 py-1 text-sm rounded-full">Apple Pie</span>
+                        </div>
+                    </div>
+
+                    <!-- Destination -->
+                    <div>
+                        <p class="text-sm font-semibold text-gray-500 mb-2">✈️ Fav Destination</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span
+                                class="bg-indigo-100 text-indigo-600 px-4 py-1 text-sm rounded-full">Switzerland</span>
+                            <span class="bg-indigo-100 text-indigo-600 px-4 py-1 text-sm rounded-full">Vietnam</span>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- addition ends-->
+
+
+    <!-- Featured Profiles -->
+    <section class="py-20 bg-rose-50">
+        <div class="max-w-7xl mx-auto px-6">
+            <h3 class="text-4xl font-bold text-center mb-12">Featured Profiles</h3>
+            <div class="grid md:grid-cols-3 gap-8">
+
+                <!-- Profile Card -->
+                <!-- Repeat 6 -->
+                <div
+                    class="backdrop-blur-lg bg-white/60 rounded-2xl shadow-xl overflow-hidden hover:scale-105 transition">
+                    <img src="https://hauterrfly.com/wp-content/uploads/2025/06/Chitrangada.jpg">
+                    <div class="p-6">
+                        <h4 class="font-bold text-xl">Chitrangada, 26</h4>
+                        <p class="text-sm text-gray-600 mb-2">New Delhi, India</p>
+                        <p class="text-gray-700 text-sm mb-3">Coffee lover & sunset chaser looking for meaningful
+                            connections.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-pink-100 text-pink-600 px-3 py-1 text-xs rounded-full">Travel</span>
+                            <span class="bg-purple-100 text-purple-600 px-3 py-1 text-xs rounded-full">Art</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <button class="bg-rose-500 text-white px-4 py-2 rounded-full hover:shadow-lg">❤️
+                                Like</button>
+                            <button class="border border-gray-400 px-4 py-2 rounded-full hover:bg-gray-100">✖
+                                Pass</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Duplicate 5 more cards with different images -->
+                <div
+                    class="backdrop-blur-lg bg-white/60 rounded-2xl shadow-xl overflow-hidden hover:scale-105 transition">
+                    <img src="https://www.hollywoodreporter.com/wp-content/uploads/2024/05/Billie-Eilish-getty-H-2024.jpg?w=1296&h=730&crop=1"
+                        class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h4 class="font-bold text-xl">Billie Eilish, 29</h4>
+                        <p class="text-sm text-gray-600 mb-2">New York, USA</p>
+                        <p class="text-gray-700 text-sm mb-3">Tech enthusiast who enjoys weekend hikes and deep talks.
+                        </p>
+                        <div class="flex gap-2 mb-4">
+                            <span class="bg-pink-100 text-pink-600 px-3 py-1 text-xs rounded-full">Hiking</span>
+                            <span class="bg-purple-100 text-purple-600 px-3 py-1 text-xs rounded-full">Music</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <button class="bg-rose-500 text-white px-4 py-2 rounded-full">❤️ Like</button>
+                            <button class="border border-gray-400 px-4 py-2 rounded-full">✖ Pass</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 4 more simplified clones -->
+                <div
+                    class="backdrop-blur-lg bg-white/60 rounded-2xl shadow-xl overflow-hidden hover:scale-105 transition">
+                    <img src="https://images.hellomagazine.com/horizon/landscape/eae9fa8d8495-gettyimages-2149367825.jpg"
+                        class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h4 class="font-bold text-xl">Kendall , 31</h4>
+                        <p class="text-sm text-gray-600 mb-2">Miami, USA</p>
+                        <p class="text-gray-700 text-sm mb-3">High-fashion supermodel and reality star carving an
+                            independent, stylish path.
+                        </p>
+                        <div class="flex gap-2 mb-4">
+                            <span class="bg-pink-100 text-pink-600 px-3 py-1 text-xs rounded-full">Model</span>
+                            <span class="bg-purple-100 text-purple-600 px-3 py-1 text-xs rounded-full">Music</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <button class="bg-rose-500 text-white px-4 py-2 rounded-full">❤️ Like</button>
+                            <button class="border border-gray-400 px-4 py-2 rounded-full">✖ Pass</button>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="backdrop-blur-lg bg-white/60 rounded-2xl shadow-xl p-6 flex items-center justify-center text-gray-400">
+                    + More Profiles
+                </div>
+                <div
+                    class="backdrop-blur-lg bg-white/60 rounded-2xl shadow-xl p-6 flex items-center justify-center text-gray-400">
+                    + More Profiles
+                </div>
+                <div
+                    class="backdrop-blur-lg bg-white/60 rounded-2xl shadow-xl p-6 flex items-center justify-center text-gray-400">
+                    + More Profiles
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Compatibility Section -->
+    <section class="py-20">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <h3 class="text-4xl font-bold mb-8">Compatibility Match</h3>
+            <div class="bg-white rounded-2xl shadow-xl p-8">
+                <h4 class="text-2xl font-semibold mb-2">You & Chitrangada</h4>
+                <p class="text-rose-500 text-3xl font-bold mb-4">89% Compatibility</p>
+                <div class="w-full bg-gray-200 rounded-full h-4">
+                    <div class="bg-gradient-to-r from-rose-500 to-pink-500 h-4 rounded-full" style="width:89%"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="py-20 bg-rose-50 text-center">
+        <h3 class="text-4xl font-bold mb-12">How It Works</h3>
+        <div class="max-w-6xl mx-auto grid md:grid-cols-3 gap-8 px-6">
+            <div class="bg-white rounded-2xl shadow-lg p-8">
+                <h4 class="text-xl font-bold mb-2">1. Create Profile</h4>
+                <p>Showcase your personality and interests beautifully.</p>
+            </div>
+            <div class="bg-white rounded-2xl shadow-lg p-8">
+                <h4 class="text-xl font-bold mb-2">2. Discover</h4>
+                <p>Browse curated matches based on compatibility.</p>
+            </div>
+            <div class="bg-white rounded-2xl shadow-lg p-8">
+                <h4 class="text-xl font-bold mb-2">3. Match & Chat</h4>
+                <p>Connect and start meaningful conversations.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-20 text-center">
+        <h3 class="text-4xl font-bold mb-12">Success Stories</h3>
+        <div class="max-w-6xl mx-auto grid md:grid-cols-3 gap-8 px-6">
+            <div class="bg-white rounded-2xl shadow-lg p-6">
+                <p class="italic mb-4">“We met here and it was love at first message.”</p>
+                <h5 class="font-bold">Ayesha & Shaurya</h5>
+            </div>
+            <div class="bg-white rounded-2xl shadow-lg p-6">
+                <p class="italic mb-4">“TrueBond truly lives up to its name.”</p>
+                <h5 class="font-bold">Riya & Shikhar</h5>
+            </div>
+            <div class="bg-white rounded-2xl shadow-lg p-6">
+                <p class="italic mb-4">“Our forever started with a swipe.”</p>
+                <h5 class="font-bold">Diya & Abhishek</h5>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Valentine Proposal Section -->
+
+<section id="valentineSection" class="py-24 bg-gradient-to-r from-rose-500 to-pink-500 text-white text-center">
+
+    <h2 class="text-5xl font-extrabold mb-10">
+        Will You Be My Valentine? 💕
+    </h2>
+
+    <div class="flex justify-center items-center gap-10">
+
+        <button id="yesBtn"
+            class="bg-white text-rose-600 px-12 py-5 rounded-full text-2xl font-bold shadow-xl transition duration-300">
+            YES ❤️
+        </button>
+
+        <button id="noBtn"
+            class="bg-gray-200 text-gray-800 px-12 py-5 rounded-full text-2xl font-bold shadow-xl transition duration-300">
+            No 😢
+        </button>
+
+    </div>
+
+</section>
+
+<!-- Hidden Yay Screen -->
+<div id="yayScreen"
+     class="hidden fixed inset-0 h-screen w-screen flex items-center justify-center bg-gradient-to-r from-rose-500 to-pink-500 text-white text-center fixed inset-0 w-screen z-50">
+    <h1 class="text-6xl font-extrabold animate-bounce">
+        Yayyyy 💍💕
+    </h1>
+</div>
+
+
+<!-- Sad Song -->
+<audio id="sadSong">
+    <source src="sad_song.mp3" type="audio/mpeg">
+</audio>
+
+<!-- Celebration Song -->
+<audio id="celebrationSound">
+    <source src="happy-song.mp3" type="audio/mpeg">
+</audio>
+
+
+
+
+   <script>
+    const yesBtn = document.getElementById("yesBtn");
+    const noBtn = document.getElementById("noBtn");
+    const sadSong = document.getElementById("sadSong");
+    const celebrationSound = document.getElementById("celebrationSound");
+
+    let yesScale = 1;
+    let noScale = 1;
+
+    // NO button behavior
+   noBtn.addEventListener("click", function () {
+
+    // Start sad song at 25 sec
+    sadSong.currentTime = 25;
+    sadSong.play();
+
+    // Change text after first click
+    if (noBtn.innerText === "No 😢") {
+        noBtn.innerText = "Think Again 😏";
+        noBtn.classList.remove("bg-gray-200", "text-gray-800");
+        noBtn.classList.add("bg-yellow-400", "text-black");
+    } else {
+        noBtn.innerText = "Are You Sure? 🥺";
+    }
+
+    // Grow YES button
+    yesScale += 0.25;
+    yesBtn.style.transform = `scale(${yesScale})`;
+
+    // Shrink NO button
+    noScale -= 0.15;
+    noBtn.style.transform = `scale(${noScale})`;
+
+    // Remove NO button completely if too small
+    if (noScale <= 0.35) {
+        noBtn.style.display = "none";
+    }
+});
+
+
+    // YES button behavior
+    yesBtn.addEventListener("click", function () {
+
+        // Stop sad song if playing
+        sadSong.pause();
+        sadSong.currentTime = 25;
+
+        // Hide Valentine section
+        document.getElementById("valentineSection").classList.add("hidden");
+
+        // Show Yay screen
+        document.getElementById("yayScreen").classList.remove("hidden");
+
+        // Play celebration sound
+        celebrationSound.currentTime = 6;
+        celebrationSound.play();
+    });
+</script>
+
+
+</body>
+
+</html>;700;800&display=swap" rel="stylesheet">
     <script>
         tailwind.config = {
             theme: {
@@ -544,3 +1103,4 @@
 </body>
 
 </html>
+
